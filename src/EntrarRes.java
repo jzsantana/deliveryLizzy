@@ -7,7 +7,7 @@ public class EntrarRes extends Tela {
 
         Button btnEntrarRes = new Button();
         btnEntrarRes.setBounds(85,627,280,60);
-
+//        cadRes.restaurantes.set(i, restaurante);
         Input cnpjLogin = new Input();
         Input senhaRestauranteLogin = new Input();
 
@@ -19,6 +19,15 @@ public class EntrarRes extends Tela {
             public void actionPerformed(ActionEvent e) {
                 String cnpjDigitado = cnpjLogin.getText();
                 String senhaResDigitada = senhaRestauranteLogin.getText();
+
+                Restaurante restaurante = new Restaurante();
+
+//                for (int i = 0; i < cadRes.restaurantes.size(); i++) {
+//                    if (cnpjDigitado == cadRes.restaurantes.get(i, restaurante)){
+//
+//                    }
+//                }
+                
                 System.out.println(cnpjDigitado + senhaResDigitada);
             }
         });
@@ -26,7 +35,6 @@ public class EntrarRes extends Tela {
         btnEntrarRes.addActionListener(e -> {
             selRes selRes = new selRes();
             selRes.setVisible(true);
-            System.out.println("Olá, estou indo para a próxima pagina");
             dispose();
         });
 

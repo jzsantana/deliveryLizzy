@@ -45,6 +45,4 @@ public class Usuario {
     public void setPosicaoEndereco(String posicaoEndereco) {
         this.posicaoEndereco = posicaoEndereco;
     }
-
-
 }

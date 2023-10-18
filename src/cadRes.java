@@ -13,7 +13,6 @@ public class cadRes extends Tela{
         Input senhaRestaurante = new Input();
         Button btnAdicionarRes = new Button();
 
-
         inputNomeRes.setBounds(54,188,342,50);
         cnpj.setBounds(54,292,342,50);
         posMapaRes.setBounds(54,396,342,50);
@@ -26,39 +25,45 @@ public class cadRes extends Tela{
         getContentPane().add(senhaRestaurante);
         getContentPane().add(btnAdicionarRes);
 
-//        btnAdicionarRes.addActionListener(e -> {});
+//        btnAdicionarRes.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                String novoNomeRes = inputNomeRes.getText();
+//                String novoCnpj = cnpj.getText();
+//                String novaPosRes = posMapaRes.getText();
+//                String novaSenhaRes = senhaRestaurante.getText();
+//
+//                // aqui eu estou passando o nome das variaveis que declarei nessa classe
+//                // que fazem 'referencia' aos atributos declarados no construtor da classe restaurante
+//                Restaurante restaurante = new Restaurante(novoNomeRes, novoCnpj, novaPosRes, novaSenhaRes);
+//                App.cadastrarRestaurante(restaurante);
+//
+//                selEntrar selEntrar = new selEntrar();
+//                selEntrar.setVisible(true);
+//                dispose();
+//
+//                System.out.println();
+//            }
+//        });
 
-        btnAdicionarRes.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                Restaurante restaurante = new Restaurante();
-                ArrayList<Restaurante> restaurantes = new ArrayList<>();
+        btnAdicionarRes.addActionListener(e -> {
+            String novoNomeRes = inputNomeRes.getText();
+            String novoCnpj = cnpj.getText();
+            String novaPosRes = posMapaRes.getText();
+            String novaSenhaRes = senhaRestaurante.getText();
+            // aqui eu estou passando o nome das variaveis que declarei nessa classe
+            // que fazem 'referencia' aos atributos declarados no construtor da classe restaurante
+            Restaurante restaurante = new Restaurante(novoNomeRes, novoCnpj, novaPosRes, novaSenhaRes);
+            App.cadastrarRestaurante(restaurante);
 
-                String novoNomeRes = inputNomeRes.getText();
-                String novoCnpj = cnpj.getText();
-                String novaPosRes = posMapaRes.getText();
-                String novaSenhaRes = senhaRestaurante.getText();
+            System.out.println();
 
-                restaurante.setNomeRestaurante(novoNomeRes);
-                restaurante.setPosicaoMapa(novaPosRes);
-                restaurante.setSenhaRestaurante(novaSenhaRes);
-                restaurante.setCnpj(novoCnpj);
-
-                restaurantes.add(restaurante);
-
-
-                for (int i = 0; i < restaurantes.size(); i++) {
-                    Restaurante res = restaurantes.get(i);
-                    // Realize ações com o objeto Restaurante aqui
-                    System.out.println("Nome do Restaurante: " + res.getNomeRestaurante() + res.getCnpj());
-                }
-
-//                System.out.println("Nome do restaurante " + restaurante.getNomeRestaurante());
-            }
+            selEntrar selEntrar = new selEntrar();
+            selEntrar.setVisible(true);
+            dispose();
         });
 
     }
-
     public static void main(String[] args) {
         new cadRes();
     }

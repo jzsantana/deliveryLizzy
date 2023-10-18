@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class Restaurante {
     private String nomeRestaurante;
@@ -8,18 +6,8 @@ public class Restaurante {
     private String posicaoMapa;
     private String senhaRestaurante;
 
-//    private Map<String, String> dadosRestaurante = new HashMap<>();
-//
-//    public String getSenhaRestaurante() {
-//        return senhaRestaurante;
-//    }
-
-    public void setSenhaRestaurante(String senhaRestaurante) {
-        this.senhaRestaurante = senhaRestaurante;
-    }
 
     public Restaurante() {
-
     }
 
     public Restaurante(String nomeRestaurante, String cnpj, String posicaoMapa, String senhaRestaurante) {
@@ -51,6 +39,17 @@ public class Restaurante {
 
     public void setPosicaoMapa(String posicaoMapa) {
         this.posicaoMapa = posicaoMapa;
+    }
+    public String getSenhaRestaurante() {
+        return senhaRestaurante;
+    }
+    public void setSenhaRestaurante(String senhaRestaurante) {
+        this.senhaRestaurante = senhaRestaurante;
+    }
+
+    @Override
+    public String toString(){
+        return nomeRestaurante+" "+cnpj+" "+posicaoMapa+" "+senhaRestaurante;
     }
 
 //   private static Map<String, Restaurante> dadosRestaurante = new HashMap<>();
