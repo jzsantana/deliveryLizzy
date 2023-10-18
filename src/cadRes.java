@@ -1,5 +1,6 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Map;
 
 public class cadRes extends Tela{
     public cadRes() {
@@ -27,11 +28,20 @@ public class cadRes extends Tela{
         btnAdicionarRes.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                Restaurante restaurante = new Restaurante();
+
                 String novoNomeRes = inputNomeRes.getText();
                 String novoCnpj = cnpj.getText();
                 String novaPosRes = posMapaRes.getText();
                 String novaSenhaRes = senhaRestaurante.getText();
-                System.out.println( novoNomeRes + novoCnpj + novaPosRes + novaSenhaRes);
+
+                restaurante.setNomeRestaurante(novoNomeRes);
+                restaurante.setPosicaoMapa(novaPosRes);
+                restaurante.setSenhaRestaurante(novaSenhaRes);
+                restaurante.setCnpj(novoCnpj);
+
+                System.out.println("Nome do restaurante" + restaurante.getNomeRestaurante());
+
             }
         });
 

@@ -1,7 +1,10 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class Restaurante {
     private String nomeRestaurante;
-    private Integer cnpj;
-    private Integer posicaoMapa;
+    private String cnpj;
+    private String posicaoMapa;
     private String senhaRestaurante;
 
     public String getSenhaRestaurante() {
@@ -16,7 +19,7 @@ public class Restaurante {
 
     }
 
-    public Restaurante(String nomeRestaurante, Integer cnpj, Integer posicaoMapa, String senhaRestaurante) {
+    public Restaurante(String nomeRestaurante, String cnpj, String posicaoMapa, String senhaRestaurante) {
         this.nomeRestaurante = nomeRestaurante;
         this.cnpj = cnpj;
         this.posicaoMapa = posicaoMapa;
@@ -31,21 +34,41 @@ public class Restaurante {
         this.nomeRestaurante = nomeRestaurante;
     }
 
-    public Integer getCnpj() {
+    public String getCnpj() {
         return cnpj;
     }
 
-    public void setCnpj(Integer cnpj) {
+    public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
     }
 
-    public Integer getPosicaoMapa() {
+    public String getPosicaoMapa() {
         return posicaoMapa;
     }
 
-    public void setPosicaoMapa(Integer posicaoMapa) {
+    public void setPosicaoMapa(String posicaoMapa) {
         this.posicaoMapa = posicaoMapa;
     }
+
+   private static Map<String, Restaurante> dadosRestaurante = new HashMap<>();
+
+    public static Map<String, Restaurante> getDadosRestaurante() {
+        return dadosRestaurante;
+    }
+
+    public static void setDadosRestaurante(Map<String, Restaurante> dadosRestaurante) {
+        Restaurante.dadosRestaurante = dadosRestaurante;
+    }
+
+    public static void adicionarDadosRestaurante (String cnpj, Restaurante res){
+        dadosRestaurante.put(cnpj,res);
+    }
+
+    public static Restaurante obterRestaurante(String cnpj){
+        System.out.println(dadosRestaurante);
+        return dadosRestaurante.get(cnpj);
+    }
+
 
 
 }
