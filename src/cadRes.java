@@ -1,5 +1,7 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 public class cadRes extends Tela{
@@ -10,6 +12,7 @@ public class cadRes extends Tela{
         Input posMapaRes = new Input();
         Input senhaRestaurante = new Input();
         Button btnAdicionarRes = new Button();
+
 
         inputNomeRes.setBounds(54,188,342,50);
         cnpj.setBounds(54,292,342,50);
@@ -29,6 +32,7 @@ public class cadRes extends Tela{
             @Override
             public void actionPerformed(ActionEvent e) {
                 Restaurante restaurante = new Restaurante();
+                ArrayList<Restaurante> restaurantes = new ArrayList<>();
 
                 String novoNomeRes = inputNomeRes.getText();
                 String novoCnpj = cnpj.getText();
@@ -40,8 +44,16 @@ public class cadRes extends Tela{
                 restaurante.setSenhaRestaurante(novaSenhaRes);
                 restaurante.setCnpj(novoCnpj);
 
-                System.out.println("Nome do restaurante" + restaurante.getNomeRestaurante());
+                restaurantes.add(restaurante);
 
+
+                for (int i = 0; i < restaurantes.size(); i++) {
+                    Restaurante res = restaurantes.get(i);
+                    // Realize ações com o objeto Restaurante aqui
+                    System.out.println("Nome do Restaurante: " + res.getNomeRestaurante() + res.getCnpj());
+                }
+
+//                System.out.println("Nome do restaurante " + restaurante.getNomeRestaurante());
             }
         });
 

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,9 +8,11 @@ public class Restaurante {
     private String posicaoMapa;
     private String senhaRestaurante;
 
-    public String getSenhaRestaurante() {
-        return senhaRestaurante;
-    }
+//    private Map<String, String> dadosRestaurante = new HashMap<>();
+//
+//    public String getSenhaRestaurante() {
+//        return senhaRestaurante;
+//    }
 
     public void setSenhaRestaurante(String senhaRestaurante) {
         this.senhaRestaurante = senhaRestaurante;
@@ -50,25 +53,23 @@ public class Restaurante {
         this.posicaoMapa = posicaoMapa;
     }
 
-   private static Map<String, Restaurante> dadosRestaurante = new HashMap<>();
-
-    public static Map<String, Restaurante> getDadosRestaurante() {
-        return dadosRestaurante;
-    }
-
-    public static void setDadosRestaurante(Map<String, Restaurante> dadosRestaurante) {
-        Restaurante.dadosRestaurante = dadosRestaurante;
-    }
-
-    public static void adicionarDadosRestaurante (String cnpj, Restaurante res){
-        dadosRestaurante.put(cnpj,res);
-    }
-
-    public static Restaurante obterRestaurante(String cnpj){
-        System.out.println(dadosRestaurante);
-        return dadosRestaurante.get(cnpj);
-    }
-
-
+//   private static Map<String, Restaurante> dadosRestaurante = new HashMap<>();
+//
+//    public static Map<String, Restaurante> getDadosRestaurante() {
+//        return dadosRestaurante;
+//    }
+//
+//    public static void setDadosRestaurante(Map<String, Restaurante> dadosRestaurante) {
+//        Restaurante.dadosRestaurante = dadosRestaurante;
+//    }
+//
+//    public static void adicionarDadosRestaurante (String cnpj, Restaurante res){
+//        dadosRestaurante.put(cnpj,res);
+//    }
+//
+//    public static Restaurante obterRestaurante(String cnpj){
+//        System.out.println(dadosRestaurante);
+//        return dadosRestaurante.get(cnpj);
+//    }
 
 }
