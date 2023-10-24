@@ -45,4 +45,9 @@ public class Usuario {
     public void setPosicaoEndereco(String posicaoEndereco) {
         this.posicaoEndereco = posicaoEndereco;
     }
+
+    @Override
+    public String toString() {
+        return nomeUsuario + " " + cpf + " " + posicaoEndereco + " " + senhaUsuario;
+    }
 }

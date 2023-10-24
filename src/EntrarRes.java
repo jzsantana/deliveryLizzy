@@ -39,7 +39,6 @@ public class EntrarRes extends Tela {
                         System.out.println("Olá, estou voltando para o começo");
                         dispose();
                     }
-
                 }
                 System.out.println(cnpjDigitado + senhaResDigitada);
             }
