@@ -1,7 +1,10 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 public class EntrarRes extends Tela {
+
+
     public EntrarRes(){
         super("src//imagens//entrarRes.jpg");
 
@@ -22,10 +25,25 @@ public class EntrarRes extends Tela {
 
                 Restaurante restaurante = new Restaurante();
 
-//                for (int i = 0; i < cadRes.restaurantes.size(); i++) {
-//                    if (cnpjDigitado == cadRes.restaurantes.get(i, restaurante)){
+//                ArrayList<Restaurante> array = App.restaurantes();
+
+                for (Restaurante restaurante1 :
+                     App.restaurantes) {
+                    if (restaurante1.getCnpj().equals(cnpjDigitado)) { // Substitua 'getNome()' pelo método apropriado para obter o nome do restaurante
+                        System.out.println("Restaurante encontrado: " + restaurante1);
+                    }
+                }
+                
+                
+
+//                if (App.restaurantes.get(0).equals(cnpjDigitado) && App.restaurantes.get(0).equals(senhaResDigitada)){
+//                    System.out.println(App.restaurantes + cnpjDigitado + senhaResDigitada);
 //
-//                    }
+//                    CadPrato cadPrato = new CadPrato();
+//                    cadPrato.setVisible(true);
+//                    System.out.println("Olá, estou indo para a próxima pagina");
+//                    dispose();
+//
 //                }
                 
                 System.out.println(cnpjDigitado + senhaResDigitada);

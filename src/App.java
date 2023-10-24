@@ -27,7 +27,7 @@ public class App {
         System.out.println(usuarios);
     }
 
-    public static void (Pedido pedido) {
+    public static void cadastrarPedido (Pedido pedido) {
         pedidos.add(pedido);
         System.out.println(pedidos);
     }
