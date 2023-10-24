@@ -39,6 +39,9 @@ public class EntrarUser extends Tela {
                 System.out.println(cpf + senhaUser);
             }
         });
+        getContentPane().add(btnEntrarUser);
+        getContentPane().add(cpfLogin);
+        getContentPane().add(senhaUserLogin);
     }
 
     public static void main(String[] args) {

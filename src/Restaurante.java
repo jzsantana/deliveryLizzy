@@ -57,24 +57,4 @@ public class Restaurante {
     public String toString(){
         return nomeRestaurante+" "+cnpj+" "+posicaoMapa+" "+senhaRestaurante;
     }
-
-//   private static Map<String, Restaurante> dadosRestaurante = new HashMap<>();
-//
-//    public static Map<String, Restaurante> getDadosRestaurante() {
-//        return dadosRestaurante;
-//    }
-//
-//    public static void setDadosRestaurante(Map<String, Restaurante> dadosRestaurante) {
-//        Restaurante.dadosRestaurante = dadosRestaurante;
-//    }
-//
-//    public static void adicionarDadosRestaurante (String cnpj, Restaurante res){
-//        dadosRestaurante.put(cnpj,res);
-//    }
-//
-//    public static Restaurante obterRestaurante(String cnpj){
-//        System.out.println(dadosRestaurante);
-//        return dadosRestaurante.get(cnpj);
-//    }
-
 }
