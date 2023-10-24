@@ -1,4 +1,7 @@
-public class Start extends Tela{
+import Components.Button;
+import Components.Tela;
+
+public class Start extends Tela {
     public Start(){
         super("src//imagens//Start.jpg");
 

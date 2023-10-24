@@ -1,4 +1,6 @@
-public class CadPrato extends Tela{
+import Components.Tela;
+
+public class CadPrato extends Tela {
     public CadPrato(){
         super("src//imagens//prato.jpg");
 

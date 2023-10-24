@@ -9,7 +9,6 @@ public class Password extends JPasswordField {
         setBackground(Color.CYAN);
         setBorder(null);
         setVisible(true);
-        setEditable(false);
         setFont(new Font("Arial", Font.BOLD, 15));
     }
 }

@@ -1,16 +1,15 @@
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import Components.Button;
+import Components.Input;
+import Components.Password;
+import Components.Tela;
 
-public class cadRes extends Tela{
+public class cadRes extends Tela {
     public cadRes() {
         super("src//imagens//telaCadRes.jpg");
         Input inputNomeRes = new Input();
         Input cnpj = new Input();
         Input posMapaRes = new Input();
-        Input senhaRestaurante = new Input();
+        Password senhaRestaurante = new Password();
         Button btnAdicionarRes = new Button();
 
         inputNomeRes.setBounds(54,188,342,50);

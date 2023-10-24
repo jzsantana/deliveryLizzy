@@ -1,5 +1,7 @@
+import Components.Button;
+import Components.Tela;
 
-public class selRes extends Tela{
+public class selRes extends Tela {
     public selRes(){
         super("src//imagens//selRes.jpg");
 

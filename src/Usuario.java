@@ -1,6 +1,6 @@
 public class Usuario {
     private String nomeUsuario;
-    private Integer cpf;
+    private String cpf;
     private String posicaoEndereco;
     private String senhaUsuario;
 
@@ -15,7 +15,7 @@ public class Usuario {
         this.senhaUsuario = senhaUsuario;
     }
 
-    public Usuario(String nomeUsuario, Integer cpf, String posicaoEndereco, String senhaUsuario) {
+    public Usuario(String nomeUsuario, String cpf, String posicaoEndereco, String senhaUsuario) {
         this.nomeUsuario = nomeUsuario;
         this.cpf = cpf;
         this.posicaoEndereco = posicaoEndereco;
@@ -30,11 +30,11 @@ public class Usuario {
         this.nomeUsuario = nomeUsuario;
     }
 
-    public Integer getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(Integer cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 

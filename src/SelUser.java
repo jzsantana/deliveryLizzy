@@ -1,5 +1,7 @@
-public class SelUser extends Tela{
+import Components.Button;
+import Components.Tela;
 
+public class SelUser extends Tela {
     public SelUser(){
         super("src//imagens//selUser.jpg");
 
@@ -9,15 +11,15 @@ public class SelUser extends Tela{
         btnCadUser.setBounds(85,600,280,65);
 
         btnEntrarSelUser.addActionListener(e -> {
-            EntrarRes entrarRes = new EntrarRes();
-            entrarRes.setVisible(true);
+            EntrarUser entrarUser = new EntrarUser();
+            entrarUser.setVisible(true);
             System.out.println("Olá, estou indo para o entrar usuario");
             dispose();
         });
 
         btnCadUser.addActionListener(e -> {
-            cadRes cadRes = new cadRes();
-            cadRes.setVisible(true);
+            CadUser cadUser = new CadUser();
+            cadUser.setVisible(true);
             System.out.println("Olá, estou indo para o cad user");
             dispose();
         });

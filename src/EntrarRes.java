@@ -1,6 +1,10 @@
+import Components.Button;
+import Components.Input;
+import Components.Password;
+import Components.Tela;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 public class EntrarRes extends Tela {
     public EntrarRes(){
@@ -10,7 +14,7 @@ public class EntrarRes extends Tela {
         btnEntrarRes.setBounds(85,627,280,60);
 //        cadRes.restaurantes.set(i, restaurante);
         Input cnpjLogin = new Input();
-        Input senhaRestauranteLogin = new Input();
+        Password senhaRestauranteLogin = new Password();
 
         cnpjLogin.setBounds(55,310,350,50);
         senhaRestauranteLogin.setBounds(55,429,342,50);
