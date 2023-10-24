@@ -7,7 +7,6 @@ public class App {
 
     public static ArrayList<Restaurante> restaurantes = new ArrayList<>();
     public static ArrayList<Usuario> usuarios = new ArrayList<>();
-    public static ArrayList<Pedido> pedidos = new ArrayList<>();
 
     public App(){
 
@@ -27,10 +26,7 @@ public class App {
         System.out.println(usuarios);
     }
 
-    public static void cadastrarPedido (Pedido pedido) {
-        pedidos.add(pedido);
-        System.out.println(pedidos);
-    }
+
     public static void main(String[] args) {
         new App();
     }

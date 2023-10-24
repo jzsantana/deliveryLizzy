@@ -1,8 +1,10 @@
+package Components;
+
 import javax.swing.*;
 import java.awt.*;
 
-public class Input extends JTextField {
-    public Input(){
+public class Password extends JPasswordField {
+    public Password(){
         //setOpaque(false);
         setBackground(Color.CYAN);
         setBorder(null);

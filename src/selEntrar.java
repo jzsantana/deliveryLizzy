@@ -14,12 +14,12 @@ public class selEntrar extends Tela{
             dispose();
         });
 
-//        btnCadUser.addActionListener(e -> {
-//            CadRes telaCadUser = new CadRes();
-//            telaCadUser.setVisible(true);
-//            System.out.println("Olá");
-//            dispose();
-//        });
+        btnSelUser.addActionListener(e -> {
+            SelUser selUser = new SelUser();
+            selUser.setVisible(true);
+            System.out.println("Olá, estou indo para a próxima pagina");
+            dispose();
+        });
 
         getContentPane().add(btnSelRes);
         getContentPane().add(btnSelUser);
