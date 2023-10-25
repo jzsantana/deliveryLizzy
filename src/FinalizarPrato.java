@@ -20,6 +20,12 @@ public class FinalizarPrato extends Tela {
             dispose();
         });
 
+        btnFinalizar.addActionListener(e -> {
+            selEntrar selEntrar = new selEntrar();
+            selEntrar.setVisible(true);
+            dispose();
+        });
+
     }
 
     public static void main(String[] args) {

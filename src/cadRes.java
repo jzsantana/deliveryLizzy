@@ -1,5 +1,7 @@
 import Components.*;
 
+import javax.swing.*;
+
 public class cadRes extends Tela {
     public cadRes() {
         super("src//imagens//telaCadRes.jpg");
@@ -19,14 +21,12 @@ public class cadRes extends Tela {
         senhaRestaurante.setBounds(54,499,342,50);
         btnAdicionarRes.setBounds(85,631,280,50);
 
-
         // adiciono os componentes na tela
         getContentPane().add(inputNomeRes);
         getContentPane().add(cnpj);
         getContentPane().add(posMapaRes);
         getContentPane().add(senhaRestaurante);
         getContentPane().add(btnAdicionarRes);
-
 
         btnAdicionarRes.addActionListener(e -> {
             String novoNomeRes = inputNomeRes.getText();
@@ -43,7 +43,7 @@ public class cadRes extends Tela {
 //            selEntrar selEntrar = new selEntrar();
 //            selEntrar.setVisible(true);
 //            dispose();
-
+            JOptionPane.showMessageDialog(null, "Restaurante cadastrado com sucesso!");
             CadPrato cadPrato = new CadPrato();
             cadPrato.setVisible(true);
             dispose();
