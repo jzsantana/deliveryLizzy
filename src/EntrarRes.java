@@ -1,7 +1,4 @@
-import Components.Button;
-import Components.Input;
-import Components.Password;
-import Components.Tela;
+import Components.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -11,13 +8,19 @@ public class EntrarRes extends Tela {
         super("src//imagens//entrarRes.jpg");
 
         Button btnEntrarRes = new Button();
-        btnEntrarRes.setBounds(85,627,280,60);
-//        cadRes.restaurantes.set(i, restaurante);
         Input cnpjLogin = new Input();
         Password senhaRestauranteLogin = new Password();
+        ButtonVoltar btnVoltar = new ButtonVoltar();
 
         cnpjLogin.setBounds(55,310,350,50);
         senhaRestauranteLogin.setBounds(55,429,342,50);
+        btnEntrarRes.setBounds(85,627,280,60);
+        btnVoltar.setLocation(24,18);
+
+        getContentPane().add(btnEntrarRes);
+        getContentPane().add(cnpjLogin);
+        getContentPane().add(senhaRestauranteLogin);
+        getContentPane().add(btnVoltar);
 
         btnEntrarRes.addActionListener(new ActionListener() {
             @Override
@@ -44,9 +47,12 @@ public class EntrarRes extends Tela {
             }
         });
 
-        getContentPane().add(btnEntrarRes);
-        getContentPane().add(cnpjLogin);
-        getContentPane().add(senhaRestauranteLogin);
+        btnVoltar.addActionListener(e -> {
+            selRes selRes = new selRes();
+            selRes.setVisible(true);
+            System.out.println("to voltando pra tela anterior");
+            dispose();
+        });
 
     }
 

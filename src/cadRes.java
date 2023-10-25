@@ -8,7 +8,10 @@ public class cadRes extends Tela {
         Input posMapaRes = new Input();
         Password senhaRestaurante = new Password();
         Button btnAdicionarRes = new Button();
+
         ButtonVoltar btnVoltar = new ButtonVoltar();
+        btnVoltar.setLocation(24,18);
+        getContentPane().add(btnVoltar);
 
         inputNomeRes.setBounds(54,188,342,50);
         cnpj.setBounds(54,292,342,50);
@@ -16,13 +19,14 @@ public class cadRes extends Tela {
         senhaRestaurante.setBounds(54,499,342,50);
         btnAdicionarRes.setBounds(85,631,280,50);
 
+
         // adiciono os componentes na tela
         getContentPane().add(inputNomeRes);
         getContentPane().add(cnpj);
         getContentPane().add(posMapaRes);
         getContentPane().add(senhaRestaurante);
         getContentPane().add(btnAdicionarRes);
-        getContentPane().add(btnVoltar);
+
 
         btnAdicionarRes.addActionListener(e -> {
             String novoNomeRes = inputNomeRes.getText();

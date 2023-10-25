@@ -40,8 +40,8 @@ public class CadUser extends Tela {
         });
 
         btnVoltar.addActionListener(e -> {
-            selRes selRes = new selRes();
-            selRes.setVisible(true);
+            SelUser selUser = new SelUser();
+            selUser.setVisible(true);
             System.out.println("to voltando pra tela anterior");
             dispose();
         });

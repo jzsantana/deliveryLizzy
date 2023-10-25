@@ -1,14 +1,24 @@
 import Components.Button;
+import Components.ButtonVoltar;
 import Components.Tela;
 
 public class selRes extends Tela {
     public selRes(){
         super("src//imagens//selRes.jpg");
+        // nessa tela o restaurante pode escolher entre cadastrar um novo
+        // restaurante ou se já cadastrou entrar na conta
 
         Button btnEntrarSelRes = new Button();
-        btnEntrarSelRes.setBounds(85,509,280,65);
         Button btnCadRes = new Button();
+        ButtonVoltar btnVoltar = new ButtonVoltar();
+
         btnCadRes.setBounds(85,600,280,65);
+        btnEntrarSelRes.setBounds(85,509,280,65);
+        btnVoltar.setLocation(45,388);
+
+        getContentPane().add(btnEntrarSelRes);
+        getContentPane().add(btnCadRes);
+        getContentPane().add(btnVoltar);
 
         btnEntrarSelRes.addActionListener(e -> {
             EntrarRes entrarRes = new EntrarRes();
@@ -24,11 +34,13 @@ public class selRes extends Tela {
             dispose();
         });
 
-        getContentPane().add(btnEntrarSelRes);
-        getContentPane().add(btnCadRes);
+        btnVoltar.addActionListener(e -> {
+            selEntrar selEntrar = new selEntrar();
+            selEntrar.setVisible(true);
+            System.out.println("to voltando pra tela anterior");
+            dispose();
+        });
     }
 
-    public static void main(String[] args) {
-        new selRes();
-    }
+    public static void main(String[] args) { new selRes(); }
 }
