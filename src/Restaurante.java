@@ -5,11 +5,11 @@ public class Restaurante {
     private String cnpj;
     private String posicaoMapa;
     private String senhaRestaurante;
-    public static ArrayList<Pedido> pedidos = new ArrayList<>();
+    public static ArrayList<Prato> pedidos = new ArrayList<>();
 
     // função para armazenar os pedidos
-    public static void cadastrarPedido (Pedido pedido) {
-        pedidos.add(pedido);
+    public static void cadastrarPedido (Prato prato) {
+        pedidos.add(prato);
         System.out.println(pedidos);
     }
 
