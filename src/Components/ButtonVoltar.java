@@ -1,7 +1,5 @@
 package Components;
-
 import javax.swing.*;
-import java.awt.*;
 
 public class ButtonVoltar extends JButton {
     public ButtonVoltar(){

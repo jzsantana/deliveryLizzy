@@ -6,7 +6,6 @@ public class CadPrato extends Tela {
 
 
     }
-
     public static void main(String[] args) {
         new CadPrato();
     }

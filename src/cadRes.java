@@ -16,6 +16,7 @@ public class cadRes extends Tela {
         senhaRestaurante.setBounds(54,499,342,50);
         btnAdicionarRes.setBounds(85,631,280,50);
 
+        // adiciono os componentes na tela
         getContentPane().add(inputNomeRes);
         getContentPane().add(cnpj);
         getContentPane().add(posMapaRes);
@@ -46,9 +47,6 @@ public class cadRes extends Tela {
             System.out.println("to voltando pra tela anterior");
             dispose();
         });
-
     }
-    public static void main(String[] args) {
-        new cadRes();
-    }
+    public static void main(String[] args) { new cadRes(); }
 }

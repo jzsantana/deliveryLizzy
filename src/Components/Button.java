@@ -1,6 +1,4 @@
 package Components;
-
-import java.awt.*;
 import javax.swing.*;
 
 public class Button extends JButton {
