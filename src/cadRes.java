@@ -40,8 +40,12 @@ public class cadRes extends Tela {
             App.cadastrarRestaurante(restaurante);
 
             // chamo a proxima tela
-            selEntrar selEntrar = new selEntrar();
-            selEntrar.setVisible(true);
+//            selEntrar selEntrar = new selEntrar();
+//            selEntrar.setVisible(true);
+//            dispose();
+
+            CadPrato cadPrato = new CadPrato();
+            cadPrato.setVisible(true);
             dispose();
         });
 
