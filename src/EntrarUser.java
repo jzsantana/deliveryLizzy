@@ -1,8 +1,8 @@
 import Classes.App;
-import Classes.Restaurante;
 import Classes.Usuario;
 import Components.*;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -33,14 +33,12 @@ public class EntrarUser extends Tela {
 
                 for (Usuario user : App.usuarios) {
                     if (user.getCpf().equals(cpf) && user.getSenhaUsuario().equalsIgnoreCase(senhaUser)) {
-                        // CRIAR O REALIZAR PEDIDO
-                        System.out.println("Olá, PASSEEEEEEEI");
-                        cardapioRestaurante cardRes = new cardapioRestaurante();
+                        CardapioRestaurante cardRes = new CardapioRestaurante();
                         cardRes.setVisible(true);
                         dispose();
                     }
                     else {
-                        System.out.println("erro");
+                        JOptionPane.showMessageDialog(null, "Usuário não encontrado!");
                     }
                 }
                 System.out.println(cpf + senhaUser);
@@ -50,7 +48,6 @@ public class EntrarUser extends Tela {
         btnVoltar.addActionListener(e -> {
             SelUser selUser = new SelUser();
             selUser.setVisible(true);
-            System.out.println("to voltando pra tela anterior");
             dispose();
         });
     }

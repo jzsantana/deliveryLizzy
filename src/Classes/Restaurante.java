@@ -59,6 +59,5 @@ public class Restaurante {
 
     @Override
     public String toString(){
-        return nomeRestaurante+" "+cnpj+" "+posicaoMapa+" "+senhaRestaurante;
-    }
+        return nomeRestaurante;    }
 }

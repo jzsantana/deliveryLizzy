@@ -54,7 +54,6 @@ public class cadRes extends Tela {
         btnVoltar.addActionListener(e -> {
             selRes selRes = new selRes();
             selRes.setVisible(true);
-            System.out.println("to voltando pra tela anterior");
             dispose();
         });
     }

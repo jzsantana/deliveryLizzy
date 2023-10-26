@@ -20,14 +20,14 @@ public class selEntrar extends Tela {
         btnSelRes.addActionListener(e -> {
             selRes selRes = new selRes();
             selRes.setVisible(true);
-            System.out.println("Olá, estou indo para a próxima pagina");
+            //System.out.println("Olá, estou indo para a próxima pagina");
             dispose();
         });
 
         btnSelUser.addActionListener(e -> {
             SelUser selUser = new SelUser();
             selUser.setVisible(true);
-            System.out.println("Olá, estou indo para a próxima pagina");
+            //System.out.println("Olá, estou indo para a próxima pagina");
             dispose();
         });
     }

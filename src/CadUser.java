@@ -37,7 +37,7 @@ public class CadUser extends Tela {
             App.cadastrarUsuario(usuario);
 
             //System.out.println("Cadastro feito com sucesso! Boa Júlia!");
-            JOptionPane.showMessageDialog(null, "Classes.Usuario cadastrado com sucesso!");
+            JOptionPane.showMessageDialog(null, "Usuario cadastrado com sucesso!");
 
             selEntrar selEntrar = new selEntrar();
             selEntrar.setVisible(true);
@@ -47,7 +47,6 @@ public class CadUser extends Tela {
         btnVoltar.addActionListener(e -> {
             SelUser selUser = new SelUser();
             selUser.setVisible(true);
-            System.out.println("to voltando pra tela anterior");
             dispose();
         });
     }

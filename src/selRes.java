@@ -23,21 +23,21 @@ public class selRes extends Tela {
         btnEntrarSelRes.addActionListener(e -> {
             EntrarRes entrarRes = new EntrarRes();
             entrarRes.setVisible(true);
-            System.out.println("Olá, estou indo para a próxima pagina");
+            //System.out.println("Olá, estou indo para a próxima pagina");
             dispose();
         });
 
         btnCadRes.addActionListener(e -> {
             cadRes cadRes = new cadRes();
             cadRes.setVisible(true);
-            System.out.println("Olá, estou indo para o cad Classes.Restaurante");
+            //System.out.println("Olá, estou indo para o cad Restaurante");
             dispose();
         });
 
         btnVoltar.addActionListener(e -> {
             selEntrar selEntrar = new selEntrar();
             selEntrar.setVisible(true);
-            System.out.println("to voltando pra tela anterior");
+            //System.out.println("to voltando pra tela anterior");
             dispose();
         });
     }

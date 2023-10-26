@@ -28,7 +28,6 @@ public class CadPrato extends Tela {
 
             FinalizarPrato finPrato = new FinalizarPrato();
             finPrato.setVisible(true);
-            System.out.println("funcionou");
             System.out.println(prato);
             dispose();
         });

@@ -2,6 +2,7 @@ import Classes.App;
 import Classes.Restaurante;
 import Components.*;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -35,14 +36,16 @@ public class EntrarRes extends Tela {
                     if (restaurante.getCnpj().equals(cnpjDigitado) && restaurante.getSenhaRestaurante().equalsIgnoreCase(senhaResDigitada)) {
                         CadPrato cadPrato = new CadPrato();
                         cadPrato.setVisible(true);
-                        System.out.println("Olá, estou indo para adicionar prato");
+                        //System.out.println("Olá, estou indo para adicionar prato");
                         dispose();
                     }
                     else {
-                        Start start = new Start();
-                        start.setVisible(true);
-                        System.out.println("Olá, estou voltando para o começo");
-                        dispose();
+                        JOptionPane.showMessageDialog(null, "Restaurante não encontrado!");
+
+                        //Start start = new Start();
+                        //start.setVisible(true);
+                        //System.out.println("Olá, estou voltando para o começo");
+                        //dispose();
                     }
                 }
                 System.out.println(cnpjDigitado + senhaResDigitada);

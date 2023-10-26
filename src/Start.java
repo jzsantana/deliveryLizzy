@@ -11,7 +11,7 @@ public class Start extends Tela {
         start.addActionListener(e -> {
             selEntrar selEntrar = new selEntrar();
             selEntrar.setVisible(true);
-            System.out.println("Olá, estou indo para a próxima pagina");
+            //System.out.println("Olá, estou indo para a próxima pagina");
             dispose();
         });
 
