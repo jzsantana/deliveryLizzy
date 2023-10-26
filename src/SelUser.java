@@ -23,14 +23,14 @@ public class SelUser extends Tela {
         btnEntrarSelUser.addActionListener(e -> {
             EntrarUser entrarUser = new EntrarUser();
             entrarUser.setVisible(true);
-            System.out.println("Olá, estou indo para o entrar usuario");
+            //System.out.println("Olá, estou indo para o entrar usuario");
             dispose();
         });
 
         btnCadUser.addActionListener(e -> {
             CadUser cadUser = new CadUser();
             cadUser.setVisible(true);
-            System.out.println("Olá, estou indo para o cad user");
+            //System.out.println("Olá, estou indo para o cad user");
             dispose();
         });
 

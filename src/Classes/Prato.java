@@ -8,6 +8,7 @@ public class Prato {
     public static ArrayList<Prato> pratos = new ArrayList<>();
 
     public Prato(){
+
     }
 
     public Prato(String nomePrato, Double precoPrato) {

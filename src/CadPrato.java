@@ -24,7 +24,9 @@ public class CadPrato extends Tela {
             String precoNovoPratoString = inputPrecoNovoPrato.getText();
 
             Prato prato = new Prato(nomeNovoPrato, Double.parseDouble(precoNovoPratoString));
+
             Prato.cadastrarPrato(prato);
+            //Prato.cadastrarPrato(new Prato(nomeNovoPrato, Double.parseDouble(precoNovoPratoString)));
 
             FinalizarPrato finPrato = new FinalizarPrato();
             finPrato.setVisible(true);

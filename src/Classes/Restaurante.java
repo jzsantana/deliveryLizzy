@@ -11,6 +11,7 @@ public class Restaurante {
     private String senhaRestaurante;
     public static ArrayList<Prato> pedidos = new ArrayList<>();
 
+
     // função para armazenar os pedidos
     public static void cadastrarPedido (Prato prato) {
         pedidos.add(prato);

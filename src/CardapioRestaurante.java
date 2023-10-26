@@ -1,5 +1,6 @@
 import Classes.App;
 import Classes.Restaurante;
+import Components.Button;
 import Components.ButtonVoltar;
 import Components.Tela;
 
@@ -12,7 +13,9 @@ public class CardapioRestaurante extends Tela {
         super("src//imagens//escolhaRes.jpg");
 
         ButtonVoltar btnVoltar = new ButtonVoltar();
+        Components.Button btnEscolherPrato = new Button();
 
+        btnEscolherPrato.setBounds(85,607,280,60);
         btnVoltar.setLocation(24,18);
 
         // tras a lista de restaurantes para essa classe
@@ -31,7 +34,14 @@ public class CardapioRestaurante extends Tela {
             dispose();
         });
 
+        btnEscolherPrato.addActionListener(e -> {
+            CardapioPrato cardPrato = new CardapioPrato();
+            cardPrato.setVisible(true);
+            dispose();
+        });
+
         getContentPane().add(comboBoxRestaurante);
+        getContentPane().add(btnEscolherPrato);
         getContentPane().add(btnVoltar);
     }
 
