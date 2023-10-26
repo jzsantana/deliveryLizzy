@@ -1,3 +1,7 @@
+package Classes;
+
+import Classes.Prato;
+
 import java.util.ArrayList;
 
 public class Restaurante {

@@ -1,3 +1,5 @@
+import Classes.App;
+import Classes.Restaurante;
 import Components.*;
 
 import java.awt.event.ActionEvent;

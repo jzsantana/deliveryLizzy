@@ -1,4 +1,8 @@
+import Classes.App;
+import Classes.Usuario;
 import Components.*;
+
+import javax.swing.*;
 
 public class CadUser extends Tela {
     public CadUser(){
@@ -32,7 +36,8 @@ public class CadUser extends Tela {
             Usuario usuario = new Usuario(nomeNovoUser,cpfNovoUser, enderecoNovoUser,senhaNovoUser);
             App.cadastrarUsuario(usuario);
 
-            System.out.println("Cadastro feito com sucesso! Boa Júlia!");
+            //System.out.println("Cadastro feito com sucesso! Boa Júlia!");
+            JOptionPane.showMessageDialog(null, "Classes.Usuario cadastrado com sucesso!");
 
             selEntrar selEntrar = new selEntrar();
             selEntrar.setVisible(true);

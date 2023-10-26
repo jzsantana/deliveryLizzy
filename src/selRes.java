@@ -30,7 +30,7 @@ public class selRes extends Tela {
         btnCadRes.addActionListener(e -> {
             cadRes cadRes = new cadRes();
             cadRes.setVisible(true);
-            System.out.println("Olá, estou indo para o cad Restaurante");
+            System.out.println("Olá, estou indo para o cad Classes.Restaurante");
             dispose();
         });
 

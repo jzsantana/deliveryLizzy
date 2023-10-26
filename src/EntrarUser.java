@@ -1,3 +1,6 @@
+import Classes.App;
+import Classes.Restaurante;
+import Classes.Usuario;
 import Components.*;
 
 import java.awt.event.ActionEvent;
@@ -28,17 +31,16 @@ public class EntrarUser extends Tela {
                 String cpf = cpfLogin.getText();
                 String senhaUser = senhaUserLogin.getText();
 
-                for (Restaurante restaurante : App.restaurantes) {
-                    if (restaurante.getCnpj().equals(cpf) && restaurante.getSenhaRestaurante().equalsIgnoreCase(senhaUser)) {
+                for (Usuario user : App.usuarios) {
+                    if (user.getCpf().equals(cpf) && user.getSenhaUsuario().equalsIgnoreCase(senhaUser)) {
                         // CRIAR O REALIZAR PEDIDO
                         System.out.println("Olá, PASSEEEEEEEI");
+                        cardapioRestaurante cardRes = new cardapioRestaurante();
+                        cardRes.setVisible(true);
                         dispose();
                     }
                     else {
-                        Start start = new Start();
-                        start.setVisible(true);
-                        System.out.println("Olá, estou voltando para o começo");
-                        dispose();
+                        System.out.println("erro");
                     }
                 }
                 System.out.println(cpf + senhaUser);

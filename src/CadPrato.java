@@ -1,3 +1,4 @@
+import Classes.Prato;
 import Components.Button;
 import Components.Input;
 import Components.Tela;

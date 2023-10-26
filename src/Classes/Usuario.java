@@ -1,3 +1,5 @@
+package Classes;
+
 public class Usuario {
     private String nomeUsuario;
     private String cpf;
