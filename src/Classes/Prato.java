@@ -3,12 +3,20 @@ package Classes;
 import java.util.ArrayList;
 
 public class Prato {
-    String nomePrato;
-    Double precoPrato;
+    private String nomePrato;
+    private Double precoPrato;
     public static ArrayList<Prato> pratos = new ArrayList<>();
 
     public Prato(){
 
+    }
+
+    public String getNomePrato() {
+        return nomePrato;
+    }
+
+    public Double getPrecoPrato() {
+        return precoPrato;
     }
 
     public Prato(String nomePrato, Double precoPrato) {

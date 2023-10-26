@@ -1,7 +1,6 @@
 import Classes.App;
 import Classes.Usuario;
 import Components.*;
-
 import javax.swing.*;
 
 public class CadUser extends Tela {
@@ -36,7 +35,6 @@ public class CadUser extends Tela {
             Usuario usuario = new Usuario(nomeNovoUser,cpfNovoUser, enderecoNovoUser,senhaNovoUser);
             App.cadastrarUsuario(usuario);
 
-            //System.out.println("Cadastro feito com sucesso! Boa Júlia!");
             JOptionPane.showMessageDialog(null, "Usuario cadastrado com sucesso!");
 
             selEntrar selEntrar = new selEntrar();
@@ -51,7 +49,5 @@ public class CadUser extends Tela {
         });
     }
 
-    public static void main(String[] args) {
-        new CadUser();
-    }
+    public static void main(String[] args) { new CadUser(); }
 }

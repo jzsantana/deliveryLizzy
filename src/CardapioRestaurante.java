@@ -1,9 +1,9 @@
 import Classes.App;
 import Classes.Restaurante;
+import Classes.Usuario;
 import Components.Button;
 import Components.ButtonVoltar;
 import Components.Tela;
-
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
@@ -23,6 +23,7 @@ public class CardapioRestaurante extends Tela {
         String [] opcoesRestaurante = new String[listaRes.size()];
         DefaultComboBoxModel<Restaurante> teste = new DefaultComboBoxModel<>(App.restaurantes.toArray(new Restaurante[0]));
         JComboBox<Restaurante> comboBoxRestaurante = new JComboBox<>(teste);
+
         comboBoxRestaurante.setBounds(50,360,350,35);
         comboBoxRestaurante.setBackground(Color.WHITE);
         comboBoxRestaurante.setForeground(Color.BLACK);
@@ -45,7 +46,5 @@ public class CardapioRestaurante extends Tela {
         getContentPane().add(btnVoltar);
     }
 
-    public static void main(String[] args) {
-        new CardapioRestaurante();
-    }
+    public static void main(String[] args) { new CardapioRestaurante(); }
 }

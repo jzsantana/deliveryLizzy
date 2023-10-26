@@ -2,6 +2,8 @@ package Classes;
 
 import java.util.ArrayList;
 
+import static Classes.Prato.pratos;
+
 public class App {
     public String user;
     public String restaurant;
@@ -10,6 +12,19 @@ public class App {
 
     public App(){
     }
+
+    // aqui eu crio uma funçaõ que 'popula' meus arrays
+    public static void populandoLista(){
+        Restaurante pizzaria = new Restaurante("Papa's Pizzaria", "112223330001", "A2","102030");
+        restaurantes.add(pizzaria);
+
+        Usuario admin = new Usuario("julia", "512", "B4", "102030");
+        usuarios.add(admin);
+
+        Prato queijoso = new Prato("Queijoso: pão com queijo derretido", 12.50);
+        pratos.add(queijoso);
+    }
+
 
     public App(String user, String restaurant) {
         this.user = user;

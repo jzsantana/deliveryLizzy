@@ -1,5 +1,4 @@
 import Components.Button;
-import Components.ButtonVoltar;
 import Components.Tela;
 
 public class selEntrar extends Tela {
@@ -20,19 +19,15 @@ public class selEntrar extends Tela {
         btnSelRes.addActionListener(e -> {
             selRes selRes = new selRes();
             selRes.setVisible(true);
-            //System.out.println("Olá, estou indo para a próxima pagina");
             dispose();
         });
 
         btnSelUser.addActionListener(e -> {
             SelUser selUser = new SelUser();
             selUser.setVisible(true);
-            //System.out.println("Olá, estou indo para a próxima pagina");
             dispose();
         });
     }
 
-    public static void main(String[] args) {
-        new selEntrar();
-    }
+    public static void main(String[] args) { new selEntrar();}
 }

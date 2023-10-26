@@ -1,7 +1,6 @@
 import Classes.App;
 import Classes.Usuario;
 import Components.*;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -33,6 +32,7 @@ public class EntrarUser extends Tela {
 
                 for (Usuario user : App.usuarios) {
                     if (user.getCpf().equals(cpf) && user.getSenhaUsuario().equalsIgnoreCase(senhaUser)) {
+                        user.setCpf(cpf);
                         CardapioRestaurante cardRes = new CardapioRestaurante();
                         cardRes.setVisible(true);
                         dispose();

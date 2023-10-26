@@ -1,16 +1,24 @@
 package Classes;
 
+import java.util.ArrayList;
+
 public class Usuario {
     private String nomeUsuario;
     private String cpf;
     private String posicaoEndereco;
     private String senhaUsuario;
 
+    public static ArrayList<Prato> pedidoCliente = new ArrayList<>();
+
     public Usuario() {
     }
 
     public String getSenhaUsuario() {
         return senhaUsuario;
+    }
+
+    public static void cadastrarPedidoCliente(Prato prato){
+        pedidoCliente.add(prato);
     }
 
     public void setSenhaUsuario(String senhaUsuario) {

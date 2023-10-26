@@ -7,18 +7,14 @@ public class Start extends Tela {
 
         Button start = new Button();
         start.setBounds(85,585,280,65);
+        getContentPane().add(start);
 
         start.addActionListener(e -> {
             selEntrar selEntrar = new selEntrar();
             selEntrar.setVisible(true);
-            //System.out.println("Olá, estou indo para a próxima pagina");
             dispose();
         });
-
-        getContentPane().add(start);
     }
 
-    public static void main(String[] args) {
-        new Start();
-    }
+    public static void main(String[] args) { new Start(); }
 }

@@ -1,7 +1,6 @@
 import Classes.App;
 import Classes.Restaurante;
 import Components.*;
-
 import javax.swing.*;
 
 public class cadRes extends Tela {
@@ -41,11 +40,7 @@ public class cadRes extends Tela {
             Restaurante restaurante = new Restaurante(novoNomeRes, novoCnpj, novaPosRes, novaSenhaRes);
             App.cadastrarRestaurante(restaurante);
 
-            // chamo a proxima tela
-//            selEntrar selEntrar = new selEntrar();
-//            selEntrar.setVisible(true);
-//            dispose();
-            JOptionPane.showMessageDialog(null, "Classes.Restaurante cadastrado com sucesso!");
+            JOptionPane.showMessageDialog(null, "Restaurante cadastrado com sucesso!");
             CadPrato cadPrato = new CadPrato();
             cadPrato.setVisible(true);
             dispose();

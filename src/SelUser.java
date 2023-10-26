@@ -42,8 +42,5 @@ public class SelUser extends Tela {
         });
     }
 
-    public static void main(String[] args) {
-        new SelUser();
-    }
-
+    public static void main(String[] args) { new SelUser(); }
 }

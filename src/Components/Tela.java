@@ -1,9 +1,10 @@
 package Components;
-
 import javax.swing.*;
 import java.awt.*;
 
 public class Tela extends JFrame {
+    // criando a classe que vou usar como um 'molde' para as outras telas
+
     public Tela(String backgroundImage){
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100,100,460,755);
@@ -26,6 +27,5 @@ public class Tela extends JFrame {
         setLocationRelativeTo(null);
         setResizable(false);
         setVisible(true);
-
     }
 }

@@ -1,7 +1,4 @@
 package Classes;
-
-import Classes.Prato;
-
 import java.util.ArrayList;
 
 public class Restaurante {
@@ -58,7 +55,9 @@ public class Restaurante {
         this.senhaRestaurante = senhaRestaurante;
     }
 
+    // essa função permite imprimir os valores da classe, nela eu posso determinar o que eu quero imprimir,
+    // no caso, estou imprimindo somente o nome do restaurante
     @Override
     public String toString(){
-        return nomeRestaurante;    }
+        return nomeRestaurante; }
 }

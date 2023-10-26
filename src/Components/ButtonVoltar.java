@@ -7,6 +7,8 @@ public class ButtonVoltar extends JButton {
         setFocusPainted(false);
         setBorderPainted(false);
         setContentAreaFilled(false);
-        setSize(50,50); // assim eu preciso passar só a localização
+        // assim eu preciso passar só a localização, já que,
+        // o botao é o mesmo, mas adiciono ele em locais diferentes nas telas
+        setSize(50,50);
     }
 }

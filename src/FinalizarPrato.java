@@ -25,10 +25,7 @@ public class FinalizarPrato extends Tela {
             selEntrar.setVisible(true);
             dispose();
         });
-
     }
 
-    public static void main(String[] args) {
-        new FinalizarPrato();
-    }
+    public static void main(String[] args) { new FinalizarPrato(); }
 }

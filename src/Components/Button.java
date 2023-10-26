@@ -6,7 +6,7 @@ public class Button extends JButton {
         setOpaque(true);
 //        setBorder(null);
         setContentAreaFilled(false);
-//        setBorderPainted(false);
+        setBorderPainted(false);
 //        setBackground(Color.BLUE);
     }
 }
